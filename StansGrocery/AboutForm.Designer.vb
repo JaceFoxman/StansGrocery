@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class StansGroceryForm
+Partial Class AboutForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,15 +24,14 @@ Partial Class StansGroceryForm
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'StansGroceryForm
+        'AboutForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1035, 599)
-        Me.Name = "StansGroceryForm"
-        Me.Text = "Stan's Grocery"
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Name = "AboutForm"
+        Me.Text = "AboutForm"
         Me.ResumeLayout(False)
 
     End Sub
-
 End Class
