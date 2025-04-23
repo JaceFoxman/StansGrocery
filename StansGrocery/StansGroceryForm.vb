@@ -1,0 +1,10 @@
+﻿'Jason Permann
+'Spring 2025
+'RCET2265
+'Stan's Grocery
+'
+Public Class StansGroceryForm
+    Private Sub StansGroceryForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class
