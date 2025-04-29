@@ -29,12 +29,12 @@ Partial Class StansGroceryForm
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.StansGroceryContextMenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.SerchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
-        Me.ContextMenuStrip1.SuspendLayout()
+        Me.StansGroceryContextMenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -58,13 +58,13 @@ Partial Class StansGroceryForm
         'SerchToolStripMenuItem
         '
         Me.SerchToolStripMenuItem.Name = "SerchToolStripMenuItem"
-        Me.SerchToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.SerchToolStripMenuItem.Size = New System.Drawing.Size(166, 34)
         Me.SerchToolStripMenuItem.Text = "Search"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(166, 34)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -77,15 +77,15 @@ Partial Class StansGroceryForm
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(164, 34)
         Me.AboutToolStripMenuItem.Text = "About"
         '
-        'ContextMenuStrip1
+        'StansGroceryContextMenuStrip
         '
-        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SerchToolStripMenuItem1})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(111, 36)
+        Me.StansGroceryContextMenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.StansGroceryContextMenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SerchToolStripMenuItem1})
+        Me.StansGroceryContextMenuStrip.Name = "ContextMenuStrip1"
+        Me.StansGroceryContextMenuStrip.Size = New System.Drawing.Size(111, 36)
         '
         'SerchToolStripMenuItem1
         '
@@ -111,12 +111,14 @@ Partial Class StansGroceryForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1035, 599)
+        Me.ContextMenuStrip = Me.StansGroceryContextMenuStrip
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "StansGroceryForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Stan's Grocery"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.StansGroceryContextMenuStrip.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,7 +130,7 @@ Partial Class StansGroceryForm
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents StansGroceryContextMenuStrip As ContextMenuStrip
     Friend WithEvents SerchToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents SearchToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
