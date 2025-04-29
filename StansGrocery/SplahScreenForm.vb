@@ -8,7 +8,6 @@ Public Class SplahScreenForm
         StansGroceryForm.SendToBack()
         SplashScreenTimer.Enabled = True
     End Sub
-
     Private Sub SplashScreenTimer_Tick(sender As Object, e As EventArgs) Handles SplashScreenTimer.Tick
         SplashScreenTimer.Enabled = False
         Me.Close()

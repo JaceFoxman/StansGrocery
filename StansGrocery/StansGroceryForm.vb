@@ -22,4 +22,5 @@ Public Class StansGroceryForm
         End If
         Me.Hide() 'dose not work inside the If statement and will not work on the Splash Screen side of code.
     End Sub
+
 End Class
