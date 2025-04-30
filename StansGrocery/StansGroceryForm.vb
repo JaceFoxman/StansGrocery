@@ -9,7 +9,6 @@ Public Class StansGroceryForm
         Me.Hide()
         AboutForm.Show()
     End Sub
-
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click, ExitToolStripMenuItem1.Click
         Me.Close()
     End Sub
@@ -17,10 +16,10 @@ Public Class StansGroceryForm
     Private Sub StansGroceryForm_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         Static activated As Boolean = True
         If activated = True Then
+
             SplahScreenForm.Show()
             activated = False
         End If
-        Me.Hide() 'dose not work inside the If statement and will not work on the Splash Screen side of code.
     End Sub
-
 End Class
+

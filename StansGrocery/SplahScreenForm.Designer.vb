@@ -40,6 +40,7 @@ Partial Class SplahScreenForm
         Me.Name = "SplahScreenForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SplahScreenForm"
+        Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
 

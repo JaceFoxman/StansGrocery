@@ -43,6 +43,7 @@ Partial Class StansGroceryForm
         Me.FilterByCategoryRadioButton = New System.Windows.Forms.RadioButton()
         Me.MenuStrip1.SuspendLayout()
         Me.StansGroceryContextMenuStrip.SuspendLayout()
+        Me.FilterGroupBox.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -52,7 +53,7 @@ Partial Class StansGroceryForm
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1035, 33)
+        Me.MenuStrip1.Size = New System.Drawing.Size(835, 33)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -66,13 +67,13 @@ Partial Class StansGroceryForm
         'SerchToolStripMenuItem
         '
         Me.SerchToolStripMenuItem.Name = "SerchToolStripMenuItem"
-        Me.SerchToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.SerchToolStripMenuItem.Size = New System.Drawing.Size(166, 34)
         Me.SerchToolStripMenuItem.Text = "Search"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(166, 34)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -123,9 +124,9 @@ Partial Class StansGroceryForm
         '
         'SearchButton
         '
-        Me.SearchButton.Location = New System.Drawing.Point(829, 465)
+        Me.SearchButton.Location = New System.Drawing.Point(371, 222)
         Me.SearchButton.Name = "SearchButton"
-        Me.SearchButton.Size = New System.Drawing.Size(194, 122)
+        Me.SearchButton.Size = New System.Drawing.Size(445, 122)
         Me.SearchButton.TabIndex = 2
         Me.SearchButton.Text = "Search"
         Me.SearchButton.UseVisualStyleBackColor = True
@@ -133,7 +134,7 @@ Partial Class StansGroceryForm
         'FilterComboBox
         '
         Me.FilterComboBox.FormattingEnabled = True
-        Me.FilterComboBox.Location = New System.Drawing.Point(578, 67)
+        Me.FilterComboBox.Location = New System.Drawing.Point(371, 69)
         Me.FilterComboBox.Name = "FilterComboBox"
         Me.FilterComboBox.Size = New System.Drawing.Size(445, 28)
         Me.FilterComboBox.TabIndex = 3
@@ -142,7 +143,7 @@ Partial Class StansGroceryForm
         '
         Me.DisplayListBox.FormattingEnabled = True
         Me.DisplayListBox.ItemHeight = 20
-        Me.DisplayListBox.Location = New System.Drawing.Point(12, 137)
+        Me.DisplayListBox.Location = New System.Drawing.Point(12, 140)
         Me.DisplayListBox.Name = "DisplayListBox"
         Me.DisplayListBox.Size = New System.Drawing.Size(300, 204)
         Me.DisplayListBox.TabIndex = 4
@@ -150,7 +151,7 @@ Partial Class StansGroceryForm
         'DisplayLabel
         '
         Me.DisplayLabel.AutoSize = True
-        Me.DisplayLabel.Location = New System.Drawing.Point(12, 111)
+        Me.DisplayLabel.Location = New System.Drawing.Point(12, 114)
         Me.DisplayLabel.Name = "DisplayLabel"
         Me.DisplayLabel.Size = New System.Drawing.Size(60, 20)
         Me.DisplayLabel.TabIndex = 5
@@ -158,17 +159,19 @@ Partial Class StansGroceryForm
         '
         'FilterGroupBox
         '
-        Me.FilterGroupBox.Location = New System.Drawing.Point(578, 137)
+        Me.FilterGroupBox.Controls.Add(Me.FilterByCategoryRadioButton)
+        Me.FilterGroupBox.Controls.Add(Me.FilterByAisleRadioButton)
+        Me.FilterGroupBox.Location = New System.Drawing.Point(371, 120)
         Me.FilterGroupBox.Name = "FilterGroupBox"
-        Me.FilterGroupBox.Size = New System.Drawing.Size(445, 204)
+        Me.FilterGroupBox.Size = New System.Drawing.Size(445, 95)
         Me.FilterGroupBox.TabIndex = 6
         Me.FilterGroupBox.TabStop = False
-        Me.FilterGroupBox.Text = "GroupBox1"
+        Me.FilterGroupBox.Text = "Filter By"
         '
         'FilterByAisleRadioButton
         '
         Me.FilterByAisleRadioButton.AutoSize = True
-        Me.FilterByAisleRadioButton.Location = New System.Drawing.Point(578, 347)
+        Me.FilterByAisleRadioButton.Location = New System.Drawing.Point(15, 34)
         Me.FilterByAisleRadioButton.Name = "FilterByAisleRadioButton"
         Me.FilterByAisleRadioButton.Size = New System.Drawing.Size(68, 24)
         Me.FilterByAisleRadioButton.TabIndex = 7
@@ -179,7 +182,7 @@ Partial Class StansGroceryForm
         'FilterByCategoryRadioButton
         '
         Me.FilterByCategoryRadioButton.AutoSize = True
-        Me.FilterByCategoryRadioButton.Location = New System.Drawing.Point(578, 377)
+        Me.FilterByCategoryRadioButton.Location = New System.Drawing.Point(15, 64)
         Me.FilterByCategoryRadioButton.Name = "FilterByCategoryRadioButton"
         Me.FilterByCategoryRadioButton.Size = New System.Drawing.Size(98, 24)
         Me.FilterByCategoryRadioButton.TabIndex = 8
@@ -191,10 +194,8 @@ Partial Class StansGroceryForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1035, 599)
+        Me.ClientSize = New System.Drawing.Size(835, 360)
         Me.ContextMenuStrip = Me.StansGroceryContextMenuStrip
-        Me.Controls.Add(Me.FilterByCategoryRadioButton)
-        Me.Controls.Add(Me.FilterByAisleRadioButton)
         Me.Controls.Add(Me.FilterGroupBox)
         Me.Controls.Add(Me.DisplayLabel)
         Me.Controls.Add(Me.DisplayListBox)
@@ -208,6 +209,8 @@ Partial Class StansGroceryForm
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.StansGroceryContextMenuStrip.ResumeLayout(False)
+        Me.FilterGroupBox.ResumeLayout(False)
+        Me.FilterGroupBox.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
